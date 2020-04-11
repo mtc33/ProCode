@@ -1,0 +1,47 @@
+<hr class="my-4">
+
+<div id = "formContainer"> 
+        <h3 style = "text-align: center" href="/home"> ProCode </h3>
+        <h3 style = "text-align: center"> Registration </h3>
+        <p> &nbsp; </p>
+
+        <form method = "POST" action = "/register"> 
+            <fieldset>
+                <div class="form-group">
+                    <label for="email"> Email Address </label>
+                    <input name = "email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email Address">
+                    <small id="emailHelp" class="form-text text-muted"> Your e-mail won't be shared with anyone else. </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="username"> Username </label>
+                    <input name = "username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Username">
+                    <small id="emailHelp" class="form-text text-muted"> This name will appear on rankings. </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password"> Password </label>
+                    <input name = "password" type="password" class="form-control" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <label for="password"> Confirm Password </label>
+                    <input name = "password2" type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+
+                <p class = "text-danger"> {{error}} </p>
+
+                <p style = "text-align: right"> or <a href = "/login"> Sign In </a> </p>
+                <div style = "text-align: center" class="form-group">
+                    <button style = "text-align: center" type="submit" class="btn btn-primary"> Register </button>
+                </div>
+
+            </fieldset>
+        </form>
+
+
+</div>
+
+<hr class="my-4">
+
+<div id = "inline"> &emsp; &emsp; &emsp; </div>

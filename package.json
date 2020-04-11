@@ -1,0 +1,26 @@
+{
+  "name": "chenmark33-final-project",
+  "version": "1.0.0",
+  "description": "Final Project for AIT",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-008-spring-2020/chenmark33-final-project.git"
+  },
+  "author": "Mark Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-008-spring-2020/chenmark33-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-008-spring-2020/chenmark33-final-project#readme",
+  "devDependencies": {
+    "bcrypt": "^4.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "hbs": "^4.1.0",
+    "mongoose": "^5.9.7"
+  }
+}

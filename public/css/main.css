@@ -1,0 +1,62 @@
+#editor { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#inline {
+    display: inline-block;
+    width: 700px;
+    height: 350px;
+    position: relative;
+    vertical-align:top;
+}
+
+#textContainer {
+    display: inline-block; 
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    vertical-align: top;
+}
+
+#textContainer2 {
+    display: inline-block;
+}
+
+#paddingContainer {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+#paddingContainer2 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 50px;
+}
+
+#formContainer {
+    margin: 0 auto;
+    width: 400px;
+}
+
+#wideContainer {
+    margin: 0 auto;
+    width: 600px;
+}
+
+#tableContainer {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#alert-box {
+    margin: 0 auto;
+    width: 400px;
+    height: 30px;
+}
