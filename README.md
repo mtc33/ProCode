@@ -40,3 +40,4 @@ Author: [@chenmark33](https://github.com/chenmark33)
 * Start the app 
   * If `config.json` was configured, run `NODE_ENV=PRODUCTION node app.js`
   * Otherwise, run `node app.js`
+* Note: Home page is on `http://localhost:3000/main`
