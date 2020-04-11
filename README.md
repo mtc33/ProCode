@@ -7,9 +7,9 @@
 A proof-of-concept competitive programming website where users can attempt custom problems in Java, C++, and Python, and see how they rank against other users. 
 
 FEATURES IN PROGRESS: 
--- User Authentication 
--- Actual compilation support 
--- Rankings 
+- User Authentication 
+- Actual compilation support 
+- Rankings 
 
 Author: [@chenmark33](https://github.com/chenmark33)
 
