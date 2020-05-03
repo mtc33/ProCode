@@ -1,0 +1,38 @@
+<div class="jumbotron">
+
+    <div id="tableContainerProfile">
+
+        <h3 style="text-align: center"> My Profile </h3>
+        </br>
+        <p class="lead">
+            Username: {{username}} </br></br>
+            Account Email: {{email}} </br></br>
+            Submitted Attempts: {{rating}} </br></br>
+        </p>
+        <p class = "lead" style = "text-align: center;">
+            Your Past Submissions
+        </p>
+        <table class="table table-hover" style="text-align: center;">
+            <thead>
+                <tr class="table-active">
+                    <th scope="col">Question</th>
+                    <th scope="col">Language</th>
+                    <th scope="col">Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each attempts}}
+                <tr>
+                    <td scope="row">{{this.problemName}}</td>
+                    <td>{{this.language}}</td>
+                    <td>{{this.result}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+    </div>
+
+    <hr class="my-4">
+
+</div>

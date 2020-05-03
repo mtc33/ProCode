@@ -1,22 +1,22 @@
 <div class="jumbotron" charset="utf-8">
-    
-    <div id = "paddingContainer"> </div>
-    <div id = "paddingContainer"> </div>
 
-    <div id = "textContainer"> 
-        <p class= "lead"> Test: {{name}} </p>
-        <p class= "lead"> Type(s): {{category}} </p>
-        <p class= "lead"> Difficulty: {{difficulty}} </p>
-        <p class= "lead"> ---------------- </p>
-        <p class= "lead"> {{description}} </p>
-    </div>
+    <div id = "block1">
+        <div id="paddingContainer"> </div>
 
-    <div id = "paddingContainer2"> </div>
+        <div id="textContainer">
+            <p class="lead"> Problem: {{name}} </p>
+            <p class="lead"> Type(s): {{category}} </p>
+            <p class="lead"> Difficulty: {{difficulty}} </p>
+            <p class="lead"> ---------------- </p>
+            <p class="lead"> {{description}} </p>
+        </div>
 
-    <div id = "inline" charset="utf-8"> 
-        
-        <div id="editor" onChange = "update()" type = "text/css" media = "screen"></div>
-        <script src="https://pagecdn.io/lib/ace/1.4.8/ace.js" type = "text/javascript" charset="utf-8"></script>
+        <div id="paddingContainer2"> </div>
+
+        <div id="inline" charset="utf-8">
+
+        <div id="editor" onChange="update()" type="text/css" media="screen"></div>
+        <script src="https://pagecdn.io/lib/ace/1.4.8/ace.js" type="text/javascript" charset="utf-8"></script>
         <script charset="utf-8">
 
             var editor = ace.edit("editor");
@@ -26,7 +26,7 @@
             editor.setValue(`{{{starter}}}`);
             editor.clearSelection();
 
-            editor.on("input", function() {
+            editor.on("input", function () {
                 update();
             });
 
@@ -34,39 +34,40 @@
                 var val = editor.getSession().getValue();
                 document.getElementById('content').value = val;
             }
-            
+
         </script>
 
+        </div>
+
     </div>
 
-    {{!-- SEPARATOR FOR TOP TWO DIVS AND BOTTOM TWO DIVS --}}
-    
-    <div id = "paddingContainer"> </div>
-    <div id = "paddingContainer"> </div>
+    <div id = "block1"> 
+    <div id="paddingContainer"> </div>
 
-    <div id = "textContainer"> 
-        <p class = "lead"> </p>
-        {{!-- <span class="badge badge-success">Tests passed!</span>
-        <span class="badge badge-warning">Failed on one or more cases!</span>
-        <span class="badge badge-danger">Your code couldn't compile!</span> --}}
+    <div id="textContainer">
+        <p class="lead"> </p>
     </div>
 
-    <div id = "paddingContainer2"> </div>
+    <div id="paddingContainer2"> </div>
 
-    <div id = "textContainer"> 
-        <p class = "lead"> </p>
-        <form method = "POST" action = "" class = "form-inline"> 
-            <textarea style = "display:none;" name = "content" id = "content"></textarea>
-            <button style = "text-align: center" type="submit" class="btn btn-primary">Submit !</button>
+    <div id="textContainer2">
+        <p class="lead"> </p>
+        <form method="POST" action="" class="form-inline">
+            <textarea style="display:none;" name="content" id="content"></textarea>
+            <button style="text-align: center" type="submit" class="btn btn-primary">Submit !</button>
             &emsp;
-            <select class="form-control" name = "language" id="language" style= "width: 100px">
-                <option value = "java"> Java </option>
-                <option value = "cpp"> C++ </option>
-                <option value = "python"> Python </option>
+            <select class="form-control" name="language" id="language" style="width: 100px">
+                <option value="java"> Java </option>
+                <option value="cpp"> C++ </option>
+                <option value="python"> Python </option>
             </select>
+            &emsp;
+            <a id = "output"> {{output}} </a>
         </form>
     </div>
 
+    </div>
+    
     <hr class="my-4">
 
 </div>

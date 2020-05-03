@@ -10,8 +10,8 @@
 
 #inline {
     display: inline-block;
-    width: 700px;
-    height: 350px;
+    width: 45%;
+    height: 400px;
     position: relative;
     vertical-align:top;
 }
@@ -20,24 +20,42 @@
     display: inline-block; 
     position: relative;
     margin: 0 auto;
-    width: 400px;
+    width: 24%;
     vertical-align: top;
+
 }
 
 #textContainer2 {
-    display: inline-block;
+    display: inline-block; 
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    vertical-align: top;
+}
+
+#textContainer3 {
+    display: inline-block; 
+}
+
+#quoteContainer {
+    text-align: center;
+    position: relative; 
+    height: 100%;
+    width: 100%;
 }
 
 #paddingContainer {
     display: inline-block;
     margin: 0 auto;
-    width: 100px;
+    width: 18%;
+
 }
 
 #paddingContainer2 {
     display: inline-block;
     margin: 0 auto;
-    width: 50px;
+    width: 3%;
+
 }
 
 #formContainer {
@@ -52,11 +70,24 @@
 
 #tableContainer {
     margin: 0 auto;
-    width: 1000px;
+    width: 800px;
+}
+
+#tableContainerProfile {
+    margin: 0 auto;
+    width: 800px;
 }
 
 #alert-box {
     margin: 0 auto;
     width: 400px;
     height: 30px;
+}
+
+#block1 {
+    display: block;
+}
+
+.form-control {
+    display: inline-block;
 }

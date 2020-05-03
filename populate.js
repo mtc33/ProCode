@@ -8,14 +8,15 @@ const newQuestionName = "findlength";
 const newQuestionLanguages = ["java"];
 const newQuestionCategories = ["fundamentals", "arrays"];
 const newQuestionDifficulty = 1;
-const newQuestionStarterCode = "public class Main{\
-    \n\n\tpublic static void main(String[] args) {\
-    \n\t\tint[] array = new int[]{1, 2, 3};\
-    \n\t\tSystem.out.println(array.length == findlength(array));\
+const newQuestionStarterCode = "public class Solution {\
+    \n\
+    \n\tpublic int test(Object...a) {\
+    \n\t\treturn findlength((int[]) a[0]);\
     \n\t}\
-    \n\n\tpublic static int findlength(int[] array) {\
-    \n\t\t // Your code here \
-    \n\t\t return 0; \
+    \n\
+    \n\t/* Do not modify anything above this */\
+    \n\n\tpublic int findlength(int[] array) {\
+    \n\t\t// return 0;\
     \n\t}\
     \n\n}";
 const newQuestionDescription = "Given an array, return the length of the array."
@@ -32,7 +33,7 @@ const questionFields = {
 /* Insert new question */ 
 const newQuestion = new Questions(questionFields);
 newQuestion.save((err, savedQuestion) => {
-    if (err) {}
+    if (err) {console.log(err);}
     else {
         console.log("Successful Save");
     }
@@ -43,8 +44,18 @@ const newQuestionName2 = "addtwo";
 const newQuestionLanguages2 = ["java"];
 const newQuestionCategories2 = ["fundamentals"];
 const newQuestionDifficulty2 = 1;
-const newQuestionStarterCode2 = "public class Main{\n\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println();\n\t}\n\n}";
-const newQuestionDescription2 = "Given two numbers, return their sum."
+const newQuestionStarterCode2 = "public class Solution {\
+    \n\
+    \n\tpublic int test(Object...a) {\
+    \n\t\treturn addtwo((int) a[0], (int) a[1]);\
+    \n\t}\
+    \n\
+    \n\t/* Do not modify anything above this */\
+    \n\n\tpublic int addtwo(int a, int b) {\
+    \n\t\t// return 0;\
+    \n\t}\
+    \n\n}";
+const newQuestionDescription2 = "Given two integers, return their sum."
 
 const questionFields2 = {
     name: newQuestionName2,
@@ -58,7 +69,7 @@ const questionFields2 = {
 /* Insert new question */ 
 const newQuestion2 = new Questions(questionFields2);
 newQuestion2.save((err, savedQuestion) => {
-    if (err) {}
+    if (err) {console.log(err);}
     else {
         console.log("Successful Save");
     }

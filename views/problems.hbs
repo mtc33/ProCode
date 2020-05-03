@@ -1,18 +1,18 @@
 <div class="jumbotron">
-    
-    <div id = "tableContainer"> 
-        
-        <form method = "GET" action = "/problems">
-            <p class= "lead"> 
-                Filter By: 
-                <select class="custom-select" style= "width: 150px" name = "supportedLanguages">
-                    <option selected="">Languages</option>
+
+    <div id="tableContainer">
+
+        <form method="GET" action="/problems">
+            <p class="lead">
+                Filter By:
+                <select class="custom-select" style="width: 150px" name="supportedLanguages">
+                    <option selected value =''>Languages</option>
                     <option value="java">Java</option>
                     <option value="python">Python</option>
                     <option value="cpp">C++</option>
                 </select>
-                <select class="custom-select" style= "width: 150px" name = "category">
-                    <option selected="">Categories</option>
+                <select class="custom-select" style="width: 150px" name="category">
+                    <option selected value =''>Categories</option>
                     <option value="fundamentals">Fundamentals</option>
                     <option value="arrays">Arrays</option>
                     <option value="strings">Strings</option>
@@ -21,38 +21,38 @@
                     <option value="heaps">Heaps</option>
                     <option value="graphs">Graphs</option>
                 </select>
-                <select class="custom-select" style= "width: 150px" name = "name">
-                    <option selected="">Difficulty</option>
+                <select class="custom-select" style="width: 150px" name="name">
+                    <option selected value =''>Difficulty</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                <button style = "text-align: center" type="submit" class="btn btn-primary">Filter</button>
+                <button style="text-align: center" type="submit" class="btn btn-primary">Filter</button>
             </p>
         </form>
         <table class="table table-hover">
             <thead>
-                <tr class = "table-active">
-                  <th scope="col">Problem</th>
-                  <th scope="col">Languages</th>
-                  <th scope="col">Categories</th>
-                  <th scope="col">Difficulty</th>
+                <tr class="table-active">
+                    <th scope="col">Problem</th>
+                    <th scope="col">Languages</th>
+                    <th scope="col">Categories</th>
+                    <th scope="col">Difficulty</th>
                 </tr>
             </thead>
             <tbody>
-                {{#each questionArray}}
+                {{#each questions}}
                 <tr>
-                  <th scope="row"> <a href = "/problems/{{this.name}}">{{this.name}}</a></th>
-                  <td>{{this.supportedLanguages}}</td>
-                  <td>{{this.category}}</td>
-                  <td>{{this.difficulty}}</td>
+                    <th scope="row"> <a href="/problems/{{this.name}}">{{this.name}}</a></th>
+                    <td>{{this.supportedLanguages}}</td>
+                    <td>{{this.category}}</td>
+                    <td>{{this.difficulty}}</td>
                 </tr>
                 {{/each}}
             </tbody>
-        </table> 
+        </table>
 
     </div>
 
-    <div id = "inline"> &emsp; &emsp; &emsp; </div>
+    <hr class="my-4">
 
 </div>

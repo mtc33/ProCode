@@ -1,0 +1,38 @@
+<div class="jumbotron">
+
+    <div id="tableContainer">
+
+        <form method="GET" action="/rankings">
+            <p class="lead">
+                Search:
+                <input type="text" style = "width: 300px" class="form-control" placeholder="Search users" name="username">
+                <button style="text-align: center" type="submit" class="btn btn-primary">Search</button>
+            </p>
+        </form>
+        <table class="table table-hover" style="text-align: center;">
+            <thead>
+                <tr class="table-active">
+                    <th scope="col">User</th>
+                    <th scope="col">Submitted Attempts</th>
+                    {{!-- <th scope="col">Categories</th>
+                    <th scope="col">Difficulty</th> --}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each users}}
+                <tr>
+                    {{!-- <th scope="row"> <a href="/problems/{{this.name}}">{{this.name}}</a></th> --}}
+                    <td scope="row">{{this.username}}</td>
+                    <td>{{this.rating}}</td>
+                    {{!-- <td>hi</td>
+                    <td>hi</td> --}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+    </div>
+
+    <hr class="my-4">
+
+</div>

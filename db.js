@@ -29,6 +29,7 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
     const fs = require('fs');
     const path = require('path');
     const fn = path.join(__dirname, '/config.json');
+    // const fn = path.join(__dirname, '/awsconfig.json');
     const data = fs.readFileSync(fn);
     // Set the connection string to the configuration in our JSON file 
     const conf = JSON.parse(data);
